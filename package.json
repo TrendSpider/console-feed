@@ -5,8 +5,6 @@
   "types": "lib/index.d.ts",
   "description": "A React component that displays console logs from the current page, an iframe or transported across a server",
   "scripts": {
-    "prepack": "yarn build",
-    "build": "tsc -p ./tsconfig.build.json --declaration && for file in src/**/*.d.ts; do cp $file ${file/src/lib}; done",
     "start": "vite demo",
     "release": "yarn test && yarn build && yarn publish",
     "precommit": "pretty-quick --staged",
@@ -94,5 +92,6 @@
     "url": "https://github.com/samdenty/console-feed/issues"
   },
   "author": "Sam Denty <samddenty@gmail.com> (http://github.com/samdenty)",
-  "license": "MIT"
+  "license": "MIT",
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }
